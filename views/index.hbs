@@ -1,0 +1,12 @@
+<h2>Cat List</h2>
+
+{{#if cats.length}}
+# {{cats.length}}
+<ul>
+    {{#each cats}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+{{else}}
+<p>No Cats. Please buy one.</p>
+{{/if}}
